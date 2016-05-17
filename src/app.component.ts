@@ -32,7 +32,6 @@ let Heroes: Hero[] = [
   selector: 'my-app',
   template: `
   <h1>{{title}}</h1>
-  <h2>{{hero.name}} Awesome !</h2>
   <ul>
     <li *ngFor="let h of heroes">
       <span class="badge">{{h.id}}</span>

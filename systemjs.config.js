@@ -2,17 +2,19 @@
 
   // map tells the System loader where to look for things
   var map = {
-    'app':                        'app', // 'dist',
+    'src':                        'src', // 'dist',
     'rxjs':                       'node_modules/rxjs',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    '@angular':                   'node_modules/@angular'
+    '@angular':                   'node_modules/@angular',
+    'typescript':                 'node_modules/typescript/lib/typescript.js'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
-    'app':                        { main: 'main.js',  defaultExtension: 'js' },
+    'src':                        { main: 'main',  defaultExtension: 'ts' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
+    'typescript':                 { defaultExtension: 'js' },
   };
 
   var packageNames = [
@@ -34,6 +36,13 @@
   });
 
   var config = {
+    defaultJSExtensions: true,
+    transpiler: 'typescript',
+    typescriptOptions: {
+      'module': 'commonjs',
+      'emitDecoratorMetadata': true
+    },
+
     map: map,
     packages: packages
   }

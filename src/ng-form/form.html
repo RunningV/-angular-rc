@@ -1,0 +1,37 @@
+<form #form="ngForm" (ngSubmit)="logForm(form.value)">
+  <div>
+    <label>Name</label>
+    <input text="type" ngControl="name" />
+  </div>
+  <div>
+    <label>Password</label>
+    <input text="number" ngControl="psword" />
+  </div>
+  <button>Submit</button>
+</form>
+<br/>
+<br/>
+<br/>
+<form #form1="ngForm" (ngSubmit)="logForm(form1.value)">
+  <div ngControlGroup="basic">
+    <label>First Name</label>
+    <input type="text" ngControl="firstname" /><br />
+
+    <label>Last Name</label>
+    <input type="text" ngControl="lastname" /><br />
+
+    <label>Password</label>
+    <input type="text" ngControl="password" />
+  </div>
+  <div ngControlGroup="extra">
+    <label>Address</label>
+    <input type="text" ngControl="address" /><br />
+
+    <label>Tel Number</label>
+    <input type="text" ngControl="telphone" /><br />
+
+    <label>Email</label>
+    <input type="text" ngControl="email" />
+  </div>
+  <button>Submit</button>
+</form>

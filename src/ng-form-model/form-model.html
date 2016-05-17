@@ -1,0 +1,16 @@
+<!-- <form novalidate #form="ngForm" (submit)="logForm(form.value)">
+  <input type="text" ngControl="name" required>
+  <input type="text" ngControl="street" minlength="3">
+  <input type="text" ngControl="city" maxlength="10">
+  <input type="text" ngControl="zip" pattern="[A-Za-z]{5}">
+  <button>Submit</button>
+</form> -->
+
+<form novalidate #form="ngForm" [ngFormModel]="myForm" (submit)="logForm(form.value)">
+  <input type="text" ngControl="name">
+  <input type="text" ngControl="street">
+  <input type="text" ngControl="email" validateEmail>
+  <input type="text" ngControl="city">
+  <input type="text" ngControl="zip">
+  <button>Submit</button>
+</form>
