@@ -25,7 +25,8 @@ let Heroes: Hero[] = [
   {'id': 17, 'name': 'Blake Shelton - Friends【愤怒的小鸟主题曲】'},
   {'id': 18, 'name': 'will.i.am、Pia Mia - Boys & Girls'},
   {'id': 19, 'name': 'Nick Jonas - Champagne Problems'},
-  {'id': 20, 'name': 'Trent Harmon - Falling【美国偶像冠军单曲】'}
+  {'id': 20, 'name': 'Trent Harmon - Falling【美国偶像冠军单曲】'},
+  {'id': 21, 'name': 'Best day of my life '}
 ]
 
 @Component({
