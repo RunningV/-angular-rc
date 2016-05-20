@@ -1,0 +1,13 @@
+<div>
+  <form (ngSubmit)="onSubmit()" [ngFormModel]="form">
+    <div *ngFor="let question of questions" class="form-row">
+      <form-question [question]="question" [form]="form"></form-question>
+    </div>
+    <div class="form-row">
+      <button type="submit" [disabled]="!form.valid">Save</button>
+    </div>
+  </form>
+  <div *ngIf="playLoad" class="form-row">
+    <strong>Saved the following values</strong><br>{{playLoad}}
+  </div>
+</div>
