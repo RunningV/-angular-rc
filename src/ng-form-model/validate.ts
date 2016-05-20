@@ -1,7 +1,7 @@
 import {provide, Directive, forwardRef} from '@angular/core';
 import {Control, NG_VALIDATORS} from '@angular/common';
-
-function validateEmailFactory(emailBlackList: EmailBlackList) {
+// declare let EmailBlackList: any;
+/*function validateEmailFactory(emailBlackList: EmailBlackList) {
   return (c: Control) => {
     let EMAIL_REGEXP = /^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i;
 
@@ -33,4 +33,6 @@ export class EmailValidator {
   validate(c: Control) {
     return this.validator(c);
   }
-}
+}*/
+
+export class validateEmail { }
