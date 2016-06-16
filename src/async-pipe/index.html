@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular 2 Autocomplete - Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+
+    <!-- IE polyfills, keep the order please -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+    
+    <!-- Agular 2 -->
+    <script src="https://code.angularjs.org/2.0.0-beta.7/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.7/angular2.dev.js"></script>
+     <!-- Config Agular 2 and Typescript -->
+    <script>
+      System.config({
+        transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {'app': {defaultExtension: 'ts'}} 
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+ 
+  <!-- Run the application -->
+  <body>
+    <h1>Angular 2 Autocomplete</h1> 
+    <my-app class="container" style="display: block">Loading Sample...</my-app>
+  
+    <div style="padding-top:50px">
+    <a target="_blank" href="http://www.angulartypescript.com/angular-2-tutorial/" title="Angular 2 Tutorial"> 
+     <img src="http://www.angulartypescript.com/wp-content/uploads/2016/03/learn-more-angular-2.png" alt="Smiley face" height="200" width="500">   
+    </a>  
+        <ul class="nav nav-pills nav-stacked" >
+            <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-tutorial/" title="Angular 2 Home"> Angular 2 Tutorial </a></li>
+          <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-introduction/">Angular 2 Introduction</a></li>
+          <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-architecture/">Angular 2 Architecture</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-annotations/">Angular 2 Annotations</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-getting-started/">Angular 2 Setup</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-hello-world/">Angular 2 Hello World</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-components/">Angular 2 Components</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-template-syntax/">Angular 2 Template Syntax</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-data-binding/">Angular 2 Data Binding</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-forms/">Angular 2 Forms</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-formbuilder-example/">Angular 2 Formbuilder</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-router-example/">Angular 2 Router</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-http-example-typescript/">Angular 2 HTTP</a></li>
+      <li><a target="_blank" href="http://www.angulartypescript.com/angular-2-services/">Angular 2 Service</a></li> 
+    
+        </ul>
+    </div> 
+  </body>
+
+</html>
+<!-- 
+Copyright 2016 angulartypescript.com. All Rights Reserved.
+Everyone can use this source code; don’t forget to indicate the source please:
+http://www.angulartypescript.com/ 
+-->
+

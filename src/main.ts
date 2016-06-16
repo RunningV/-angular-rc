@@ -1,6 +1,5 @@
-import { bootstrap }    from '@angular/platform-browser-dynamic';
-import { AppComponent } from './hero-app/form.component';
-// import {MyFormComponent} from './ng-form/form.component';
-import {MyFormComponent} from './ng-form-model/form-model.component';
+import {bootstrap}    from '@angular/platform-browser-dynamic';
+// import {DataFlow} from './data-flow/data-flow.event';
+import {MyFormComponent} from './ng-form/form.component'
 
 bootstrap(MyFormComponent);
